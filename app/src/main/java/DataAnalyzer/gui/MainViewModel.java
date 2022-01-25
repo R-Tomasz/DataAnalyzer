@@ -14,11 +14,12 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class MainViewModel {
-    private static final ReadOnlyFileBasedPopulationRepository repo =
+    private final static ReadOnlyFileBasedPopulationRepository repo =
             new ReadOnlyFileBasedPopulationRepository();
 
     public MainViewModel() {
     }
+
 
 
     public ObservableList<String> getStatesToObservableList() {
